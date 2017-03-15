@@ -12,3 +12,6 @@ pyt1="changing variable"
 
 print(type(pyt1))
 print(pyt1)
+
+if isinstance(pyt1,str):
+    print("it's a string")
