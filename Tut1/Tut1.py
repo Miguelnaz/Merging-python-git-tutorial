@@ -19,3 +19,5 @@ if isinstance(pyt1,str):
 data = [123,456,789]
 for data in data:
     print data
+    
+
