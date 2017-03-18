@@ -20,3 +20,19 @@ X=np.array(X)
 #Loading data with pandas
 
 X2=pd.read_csv("data_2d.csv",header=None)
+
+#Show first column
+
+print X2[0]
+
+#Show first and third column (6first rows)
+print X2[[0,2]].head(6)
+
+#Show first row
+
+print X2.iloc[0]
+
+print X2.ix[0]
+
+#Show only when first column is lower than five
+print X2[X2[0]<5]
