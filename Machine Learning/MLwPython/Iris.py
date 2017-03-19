@@ -31,9 +31,15 @@ for i in range(3):
             ax[i,j].set_visible(False)
             
 #Fija las características del modelo kneighbors
-knn=KNeighborsClassifier(n_neighbors=1)
+knn=KNeighborsClassifier(n_neighbors=50,weights='distance')
 
 knn.fit(X_train,y_train)
+
+y_pred=knn.predict(X_test)
+#np.mean(ypred==y_test)
+precision=knn.score(X_test,y_test)
+
+print("Precision of the model is : "+str(precision))
 
 
 
